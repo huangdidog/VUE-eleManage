@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  class Men {
+      constructor(){
+          this.name = 'men';
+          this.age = '18';
+      }
+      dosomething(){
+          console.log('haha');
+      }
+  }
+  console.log(Men.prototype)
+  class HuangDi extends Men{
+      constructor(name){
+          super();
+          this.name = name;
+      }
+  }
+  let wo = new HuangDi('huangdi');
+
+//  function Men() {
+//      this.name = 'men';
+//      this.age = '18';
+//  }
+//  Men.prototype.dosomething = function () {
+//          console.log('haha');
+//  }
+//
+//  function HuangDi(name) {
+//      Men.call(this);
+//      this.name = name;
+//  }
+//  HuangDi.prototype = new Men();
+//
+//  let wo = new HuangDi('huangdi');
+//  console.log(wo,wo.__proto__);
+//  wo.dosomething();
+
+</script>
+</body>
+</html>
